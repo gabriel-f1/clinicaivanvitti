@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS existente -->
 </head>
 <body>
-    <div style="text-align: center; display: block;">
-        <img src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5ec5c9424445ea2e73b5d7ec/attachments/original/1589262081/login.png?1589262081" alt="Perfil" width="200px">
+    <div class="imagem-contato">
         <h1>LOGIN</h1>
-        <p>E-mail</p>
-        <input type="text">
-        <p>Senha</p>
-        <input type="text">
-        <div style="padding: 20px;">
-       <a href="index.html"> <button style="display: flex; text-align: center; margin: auto; font-size: 25px;">ENTRAR</button>
-       </a>
     </div>
+    <div class="formulario-login">
+        <img src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5ec5c9424445ea2e73b5d7ec/attachments/original/1589262081/login.png?1589262081" alt="Perfil" width="100px">
+        <form>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" required>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+        <div style="padding: 20px;">
+            <a href="index.html">Voltar para a página inicial</a>
+        </div>
     </div>
 </body>
 </html>

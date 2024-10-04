@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos - Clínica Mourão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <h2>Clínica Mourão</h2>
+        <a href="index.html" class="contate-nos">Início</a>
+    </div>
+
+    <div class="imagem-contato">
+        <h1>Contate-nos</h1>
+    </div>
+
+    <div class="formulario-contato">
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="feedback" style="display: none; margin-top: 10px; color: green;">ENVIADO!</div>
+    </div>
+
+    <footer>
+        <p>Clínica Mourão - Dedicados ao seu bem-estar. Contato: (44) 9909-4785 | Email: contato@clinicamourao.com.br</p>
+        <p>Endereço: Rua da Saúde, 123, Centro, Campo Mourão - PR</p>
+        <p>Horário de atendimento: Segunda a Sexta, 8h às 18h</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const feedback = document.getElementById('feedback');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            feedback.style.display = 'block';
+            form.reset(); // Limpa o formulário após o envio
+        });
+    </script>
+</body>
+</html>
