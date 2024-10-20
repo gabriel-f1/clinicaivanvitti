@@ -28,21 +28,21 @@
 
 .imagem-fundo {
     background-image: url('clinicamourao.png');
-    background-size: cover; /* Mantém a imagem cobrindo o fundo */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; 
+    background-position: center;
     width: 100%;
-    height: 70vh; /* Ajusta a altura da imagem de fundo */
+    height: 70vh; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imagem-contato {
-    background-image: url('clinicamourao.png'); /* Altere se a imagem for diferente */
+    background-image: url('clinicamourao.png'); 
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 20vh; /* Ajusta a altura da imagem na página de contato */
+    height: 20vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,6 @@ footer p {
     line-height: 1.6;
 }
 
-/* Adicionei as regras para o formulário de contato anteriormente */
 .formulario-contato {
     display: flex;
     justify-content: center;
